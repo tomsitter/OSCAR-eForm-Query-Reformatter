@@ -307,7 +307,7 @@
 				r.onload =  function(e) {
 					var contents = e.target.result;
 					var parsedContents = parseContents(contents);
-					exportToCsv(renameFile(f.name), parsedContents, "\t");
+					exportToCsv(renameFile(f.name), parsedContents);
 				};
 				r.readAsText(f);
 			}
