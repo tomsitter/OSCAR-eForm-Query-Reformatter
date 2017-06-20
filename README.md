@@ -3,4 +3,4 @@ This tool performs a simple reformatting of an OSCAR eForm query for easier anal
 
 You can use this tool online [here](https://tomsitter.github.io/OSCAR-eForm-Query-Reformatter/). 
 
-And example of the OSCAR eForm query can be downloaded [here](OSCAR_eForm_Query.txt).
+An example of the OSCAR eForm query can be found [here](OSCAR_eForm_Query.txt).
