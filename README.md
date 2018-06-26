@@ -5,4 +5,4 @@ You can export the value of named fields in completed eForms using the [OSCAR eF
 
 Export the results of the query as a CSV file and drag-and-drop it into the online tool [here](https://tomsitter.github.io/OSCAR-eForm-Query-Reformatter/). The downloaded file can be imported into Excel for analysis where there will be one row per eForm.
 
-Send email queries to tsitter@egtafht.ca
+Email questions to tsitter@egtafht.ca
