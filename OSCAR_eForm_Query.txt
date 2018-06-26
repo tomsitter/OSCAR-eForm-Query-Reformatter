@@ -12,7 +12,7 @@ FROM eform_values
 WHERE fdid IN (
     SELECT fdid
     FROM eform_data 
-    WHERE form_name = '{form_name}'
+    WHERE form_name = "{form_name}"
     AND form_date >= '{start_date}'
     AND form_date <= '{end_date}'
     )
