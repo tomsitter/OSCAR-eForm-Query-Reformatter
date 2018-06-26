@@ -12,7 +12,7 @@ FROM eform_values
 WHERE fdid IN (
     SELECT fdid
     FROM eform_data 
-    WHERE form_name = "{form_name}"
+    WHERE fid = "{form_id}"
     AND form_date >= '{start_date}'
     AND form_date <= '{end_date}'
     )
@@ -21,7 +21,17 @@ ORDER BY form_instance_id, fieldname;
 
 </query>
 
-<param id="form_name" type="text" description="eForm Name"> </param>
+<param id="form_id" type="list" description="eForm Name">
+    <param-query> 
+        SELECT 
+		  fid,
+		  form_name
+	  FROM eform
+          WHERE status= "1"
+	  ORDER BY
+		  form_name ;
+    </param-query>
+</param>
 <param id="start_date" type="date" description="Start Date"> </param>
 <param id="end_date" type="date" description="End Date"> </param>
 
